@@ -1,0 +1,262 @@
+:root {
+  /* Colors Primary */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  /* Colors Neutral */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  /* Fonts */
+  --Bai-Jamjuree: "Bai Jamjuree", sans-serif;
+}
+
+* {
+  font-family: var(--Bai-Jamjuree);
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-head {
+  margin-bottom: 70px;
+}
+
+.section-head p {
+  max-width: 695px;
+  font-size: 1.14rem;
+  margin: 20px auto 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+}
+
+/* Header */
+
+header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-logo {
+  margin-bottom: 40px;
+}
+
+.header-desc p {
+  font-size: 1.14rem;
+  max-width: 620px;
+  margin: 20px auto 25px;
+}
+
+.download-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.download-btns .btn-ios {
+  background-color: var(--Strong-Cyan);
+  border-bottom: 3px solid hsl(171deg 67% 36%);
+}
+
+.download-btns .btn-mac {
+  background-color: var(--Light-Blue);
+  border-bottom: 3px solid hsl(233deg 63% 59%);
+}
+
+.download-btns .btn-ios,
+.download-btns .btn-mac {
+  color: #fff;
+  font-size: 1.14rem;
+  border-radius: 60px;
+  padding: 10px 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.download-btns .btn-ios:hover,
+.download-btns .btn-mac:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .download-btns {
+    flex-direction: column;
+    height: 140px;
+  }
+
+  .download-btns .btn-ios,
+  .download-btns .btn-mac {
+    width: 90%;
+  }
+
+  header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Keep Track */
+.keep-track-img {
+  transform: translateX(-48px);
+}
+
+.keep-track-feat:nth-child(2) {
+  margin: 50px auto;
+  margin-left: 40px;
+}
+
+.keep-track-feat {
+  margin-left: 40px;
+}
+
+.keep-track-feat p {
+  max-width: 345px;
+}
+
+@media (max-width: 600px) {
+  .keep-track-img {
+    transform: translateX(0);
+    padding: 0 35px;
+    margin-bottom: 60px;
+  }
+
+  .keep-track-feat {
+    text-align: center;
+  }
+
+  .keep-track-feat:nth-child(2),
+  .keep-track-feat {
+    margin-left: 0;
+  }
+
+  .keep-track-feat p {
+    max-width: 305px;
+    margin: 0 auto;
+  }
+}
+
+/* Access Clipboard */
+@media (max-width: 992px) {
+  .access-clipboard-img img {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Clintes */
+.clintes-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .clintes-items {
+    flex-direction: column;
+  }
+
+  .clintes-items .clinte:not(:nth-child(1)) {
+    margin-top: 80px;
+  }
+}
+
+/* Clipboard Download */
+.clipboard-download p {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f6f8;
+  padding: 60px 0;
+}
+
+footer .row {
+  align-items: center;
+}
+
+.footer-logo {
+  width: 70px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+footer .links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .links li {
+  width: calc(100% / 3);
+}
+
+footer .links li a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.14rem;
+}
+
+footer .links li a:hover {
+  color: var(--Strong-Cyan);
+}
+
+footer .social li {
+  display: inline-block;
+}
+
+footer .social li:nth-child(2) {
+  margin: 0 20px;
+}
+
+footer .social li i {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .social li i:hover {
+  color: var(--Strong-Cyan);
+}
+
+@media (max-width: 992px) {
+  .footer-logo {
+    margin: 0 auto;
+  }
+
+  footer .links {
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  footer .links li {
+    width: 100%;
+    padding: 15px;
+  }
+
+  footer .social {
+    text-align: center;
+  }
+
+  footer .social li:nth-child(2) {
+    margin: 0 30px;
+  }
+}
